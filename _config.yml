@@ -69,5 +69,5 @@ theme: yilia
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/ashawn/ashawn.github.io.git
+  repo: git@github.com:ashawn/ashawn.github.io.git
   branch: master
