@@ -7,20 +7,20 @@ menu:
 # SubNav
 subnav:
   github: "#"
-  weibo: "#"
-  rss: "#"
+  #weibo: "#"
+  #rss: "#"
   zhihu: "#"
   #qq: "#"
   #weixin: "#"
   #jianshu: "#"
   #douban: "#"
-  #mail: "mailto:litten225@qq.com"
+  mail: "mailto:ashawn@qq.com"
   #facebook: "#"
   #google: "#"
   #twitter: "#"
-  #linkedin: "#"
+  linkedin: "#"
 
-rss: /atom.xml
+#rss: /atom.xml
 
 # 是否需要修改 root 路径
 # 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，
