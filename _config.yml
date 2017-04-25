@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Ashawn
-subtitle:
-description:
-author: Ashawn
-language:
-timezone:
+title: AShawn's VR world
+subtitle: 总有一天我有属于我的天
+description: VR SURE -- We Are Sure
+author: AShawn
+language: zh-CN
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://vrsure.net
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:

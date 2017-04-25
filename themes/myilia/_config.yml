@@ -2,7 +2,8 @@
 
 menu:
   主页: /
-  随笔: /tags/随笔/
+  WebGL从入门到放弃: #/tags/WebGL从入门到放弃
+  胡诌: #/tags/胡诌
 
 # SubNav
 subnav:
@@ -18,7 +19,7 @@ subnav:
   #facebook: "#"
   #google: "#"
   #twitter: "#"
-  linkedin: "#"
+  #linkedin: "#"
 
 #rss: /atom.xml
 
@@ -34,17 +35,17 @@ excerpt_link: more
 # 文章卡片右下角常驻链接，不需要请设置为false
 show_all_link: '展开全文'
 # 数学公式
-mathjax: false
+mathjax: true
 # 是否在新窗口打开链接
-open_in_new: false
+open_in_new: true
 
 # 打赏
 # 请在需要打赏的文章的md文件头部，设置属性reward: true
 
 # 打赏基础设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
-reward_type: 2
+reward_type: 0
 # 打赏wording
-reward_wording: '谢谢你请我吃糖果'
+reward_wording: '你为世界和平做出了自己的贡献'
 # 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
 alipay: 
 # 微信二维码图片地址
@@ -53,10 +54,10 @@ weixin:
 # Miscellaneous
 baidu_analytics: ''
 google_analytics: ''
-favicon: /favicon.png
+favicon: /assets/img/sure.jpg
 
 #你的头像url
-avatar:
+avatar: /assets/img/fightclub.jpeg
 
 #是否开启分享
 share_jia: true
@@ -70,12 +71,12 @@ style:
   # 头像上面的背景颜色
   header: '#4d4d4d'
   # 右滑板块背景
-  slider: 'linear-gradient(200deg,#a0cfe4,#e8c37e)'
+  slider: 'linear-gradient(200deg,#4d4d4d,#000000)'
 
 # slider的设置
 slider:
   # 是否默认展开tags板块
-  showTags: false
+  showTags: true
 
 # 智能菜单
 # 如不需要，将该对应项置为false
@@ -83,9 +84,9 @@ slider:
 #smart_menu:
 #  friends: false
 smart_menu:
-  innerArchive: '所有文章'
-  friends: '友链'
-  aboutme: '关于我'
+  innerArchive: false #'所有文章'
+  friends: false #'友链'
+  aboutme: false #'关于我'
 
 friends:
   友情链接1: http://localhost:4000/
@@ -95,4 +96,4 @@ friends:
   友情链接5: http://localhost:4000/
   友情链接6: http://localhost:4000/
 
-aboutme: 很惭愧<br><br>只做了一点微小的工作<br>谢谢大家
+aboutme: 爱音乐<br>爱运动<br><br>面向风口编程<br><br><br>世界和平
