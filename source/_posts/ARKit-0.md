@@ -1,7 +1,7 @@
 ---
 title: ARKit-hello world
 date: 2017-09-08 15:18:21
-tags: ARKit
+tags: AR
 ---
 ## 要求
 iOS11 Xcode9 iPhone6S+
