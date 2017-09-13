@@ -31,7 +31,7 @@ tags: AR
 
 如果你必须显示介绍的文字，使用平易近人一些的语句。AR对于很多用户来说可能是比较高级的内容会被吓到。杜绝使用一些技术开发性的词汇比如说ARKit，世界检测，追踪会使体验更易于接受。用一些友善的对话式的可以让大多数用户理解
 
-做 | 不做
+好的提示 | 不好的提示
 ----|------
 找不到表面。尝试移动到边上或者重新放置你的手机 | 找不到平面。调整追踪
 点击一个位置放置物体 | 点击一个平面锚定物体  
@@ -48,3 +48,62 @@ tags: AR
 
 ## 放置虚拟物体
 
+![Surface detection indicator](https://developer.apple.com/ios/human-interface-guidelines/images/ARKit_Target_1.svg)
+
+![Object placement indicator](https://developer.apple.com/ios/human-interface-guidelines/images/ARKit_Target_2.svg)
+
+![App-specific indicator](https://developer.apple.com/ios/human-interface-guidelines/images/ARKit_Target_3.svg)
+
+帮助用户理解什么时候确定表面的位置放置一个物体。一个可视的提示是一个很好的方式去告诉这个表面目标模式是激活的。一个梯形网线在屏幕中央帮助人们理解他们要找一个水平的表面。一旦这个平面被选中了，这个提示要变化样式去告诉这个地方是可以放置物体的了，如何设计提示是你的应用体验的一部分
+
+当用户放置了物体的时候给合适的反馈。在表面检测的过程中准确度一直在改善。如果用户点击屏幕放置一个物体，立即用目前可以用的信息放置这个物体。然后当平面检测完成的时候再优化这个物体的位置。加入一个物体超出了检测的平面边界，轻轻的把这个物体推回表面
+
+杜绝精确地把物体放置在检测的表面边缘。在AR中，表面边界可能随着用户的周围环境的进一步分析而改变
+
+## 用户与虚拟物体的交互
+
+![right](https://developer.apple.com/ios/human-interface-guidelines/images/ARKit_User_Interaction_Right.svg)
+
+![wrong](https://developer.apple.com/ios/human-interface-guidelines/images/ARKit_User_Interaction_Wrong.svg)
+
+倾向于直接的操作而不是独立的屏幕上的控制键。用户可以直接触摸屏幕上的物体和他交互是更加具有沉浸感和直观的相对于屏幕上独立的控制按键。尽管你应该记住直接的操作有时会造成困惑或者很困难当用户移动到周围
+
+允许用户勇士标准熟悉的手势与虚拟的物体进行交互。比如说用一个手指移动物体，用两个手指旋转缩放物体
+
+一般来说，保持交互简单。触摸手势是2维的，但是AR体验是3维的。可以通过下面的方式简化用户与虚拟物体的交互
+
+把物体的移动限制在二维的表面
+
+![Limit movement](https://developer.apple.com/ios/human-interface-guidelines/images/ARKit_User_Interaction_Right.svg)
+
+把物体的旋转限制在一个轴
+
+![Limit rotation](https://developer.apple.com/ios/human-interface-guidelines/images/ARKit_09.svg)
+
+在与虚拟物体合适的交互范围内响应手势。对于用户来说精准对一些小的细的物体进行交互或者把他放到一个位置是很困难的。所以当你的应用在一个可以交互的物体旁边检测到了手势，通常来说认为用户想与这个物体进行交互
+
+考虑是否需要对用户创建的物体进行缩放。缩放在一些没有固定的大小的物体而且用户可能想要放大缩小他比如说玩具或者游戏人物上门是合适的。对于一些在实际中有固定大小的的物体比如说一件家具，如果要把他当在一个准确的尺寸下，缩放是没有必要的。缩放不是用来调整物体的距离的--想要通过把一个物体放大来使它看起来更近只会变成在比较远的地方有一个大物体
+
+注意潜在的手势冲突。双指的缩放手势和双指的旋转手势很接近。如果你用了两个相近的手势，一定要测试你的应用保证他的交互是合适的
+
+确保虚拟物体的移动是平缓的。物体不要出现跳动当用户调整他们的时候
+
+探索更多吸引人的交互方法。手势不是用户与虚拟物体交互的唯一的方式。你的应用可以用其他元素，比如说运动和近似度把这些内容带进生活。一个游戏人物可以吧头朝向用户当用户走向他的时候
+
+## 处理问题
+
+允许用户重置当没有达到他们预期的时候。不要强制用户等待条件改善或者艰难的处理物体的放置。给他们一个方式去重新启动看看有没有更好的效果
+
+![right](https://developer.apple.com/ios/human-interface-guidelines/images/ARKit_01.svg)
+
+![wrong](https://developer.apple.com/ios/human-interface-guidelines/images/ARKit_02.svg)
+
+在问题发生时给出建议的解决方式。分析用户的环境和平面检测失败可能有很多的原因--没有足够的光，平面反射太严重，平面细节太少，或者摄像头移动过度。如果你的应用检测到了这些给出解决这些问题的建议
+
+问题 | 解决建议
+----|------
+没有检测到足够的特征点 | 试着打开更多的灯然后再周围走一下
+检测到过度的移动 | 试着慢一些移动你的手机  
+表面检测花了过长的时间 | 试着移动到周围，打开更多的灯，确保你的手机对着一个有足够多纹理的平面
+
+只给合适的设备提供AR功能。如果你的应用的主要目的是AR，确保你的医用只在支持ARKit的设备上可以使用。如果你是把AR作为辅助功能。比如家具商品，其中包括产品图片，并且可以让用户在AR中查看一些产品，如果用户的设备不支持AR但是尝试使用AR功能，请避免弹出错误提示。如果不支持ARKit就直接不要给用户显示可以选的AR功能。
