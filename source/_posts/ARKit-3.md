@@ -3,6 +3,10 @@ title: ARKit-真实的灯光与基于物理的渲染
 date: 2017-09-12 17:01:53
 tags: AR
 ---
+翻译自:https://blog.markdaws.net
+
+相关工程地址:https://github.com/markdaws/arkit-by-example
+
 ![Virtual cubes on a counter top](https://cdn-images-1.medium.com/max/1600/1*o848QWJYJxzVJRjbsMnxaQ.png)
 
 在这篇文章我们将会插入更加真实的虚拟物体到场景中。要达到这个目的，我们可以通过用一项技术叫做基于物理的渲染去展示模型的更多细节，同时我们会在场景中用更准确的灯光的表现方式

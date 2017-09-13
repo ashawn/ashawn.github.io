@@ -3,6 +3,10 @@ title: ARKit-hello world
 date: 2017-09-08 15:18:21
 tags: AR
 ---
+翻译自:https://blog.markdaws.net
+
+相关工程地址:https://github.com/markdaws/arkit-by-example
+
 ## 要求
 iOS11 Xcode9 iPhone6S+
 
